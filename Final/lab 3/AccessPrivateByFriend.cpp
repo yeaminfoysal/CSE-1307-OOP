@@ -13,9 +13,7 @@ printStudent(s); // Should print "Alice: 3.8" */
 using namespace std;
 
 class Student{
-    private: 
-        string name;
-        float gpa;
+    private: string name; float gpa;
 
     public:
         Student(string name, float gpa){
