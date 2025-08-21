@@ -1,6 +1,19 @@
 /*
-Task 4: Friend Function for Two Classes Objective: Access private members from different classes. - Create two classes: - Temperature (private celsius) - Humidity (private percentage) - Write friend function displayWeather() that: - Takes both objects - Prints combined weather data Example: Temperature t(25.5); Humidity h(70); displayWeather(t, h); // Should print "25.5°C, 70% humidity"
+Task 4: Friend Function for Two Classes
+Objective: Access private members from different classes.
+- Create two classes:
+- `Temperature` (private `celsius`)
+- `Humidity` (private `percentage`)
+- Write friend function `displayWeather()` that:
+- Takes both objects
+- Prints combined weather data
+Example:
+Temperature t(25.5);
+Humidity h(70);
+displayWeather(t, h); // Should print "25.5°C, 70% humidity"
 */
+
+
 #include <iostream>
 using namespace std;
 
@@ -14,7 +27,7 @@ public:
     Temperature(double c) {
         celsius = c;
     }
-    friend void displayWeather(Temperature t, Humidity h);
+    friend void displayWeather(Temperature, Humidity);
 };
 
 class Humidity {
@@ -24,7 +37,7 @@ public:
     Humidity(int p) {
         percentage = p;
     }
-    friend void displayWeather(Temperature t, Humidity h);
+    friend void displayWeather(Temperature, Humidity);
 };
 
 void displayWeather(Temperature t, Humidity h) {
