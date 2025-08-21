@@ -1,3 +1,13 @@
+/*
+Task 5: Access Specifier Comparison
+Demonstrate all three access specifiers in a single 'BankAccount' class.
+- Public: account holder name
+- Private: account balance
+- Protected: account type (savings/checking)
+- Include methods to deposit and display balance
+- Show access attempts from main() and a derived class
+*/
+
 #include <iostream>
 #include <string>
 using namespace std;
@@ -45,8 +55,7 @@ public:
 class SavingsAccount : public BankAccount {
 public:
     // Constructor
-    SavingsAccount(string name, double initialBalance)
-        : BankAccount(name, "Savings", initialBalance) {}
+    SavingsAccount(string name, double initialBalance) : BankAccount(name, "Savings", initialBalance) {}
 
     void showAccountInfo() {
         cout << "Account Holder: " << accountHolderName << endl;

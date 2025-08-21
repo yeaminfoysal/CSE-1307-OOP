@@ -1,3 +1,14 @@
+/*
+Exercise 1:
+Write a C++ program that asks for the user's name and age, then prints a greeting with their
+name and the year they were born (assuming the current year is 2024).
+Expected Output:
+Enter your name: Alice
+Enter your age: 20
+Hello, Alice, you were born in2004!
+*/
+
+
 #include <iostream>
 
 using namespace std;

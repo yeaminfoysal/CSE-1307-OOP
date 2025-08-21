@@ -1,3 +1,11 @@
+/*
+Exercise 2:
+Write a program that takes an integer input and determines if it is positive, negative, or zero.
+Expected Output:
+Enter a number: -5
+Negative
+*/
+
 #include <iostream>
 using namespace std;
 

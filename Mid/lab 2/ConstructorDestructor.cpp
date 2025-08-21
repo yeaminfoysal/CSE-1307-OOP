@@ -1,4 +1,15 @@
+/*
+Task 4: Constructor/Destructor Practice
+Create a 'Student' class demonstrating constructor/destructor use.
+- Default constructor sets name="Unknown", id=0
+- Parameterized constructor takes name and id
+- Destructor prints deletion message
+- Create both constructor types in main()
+*/
+
 #include <iostream>
+#include <string>
+
 using namespace std;
 
 class Student {

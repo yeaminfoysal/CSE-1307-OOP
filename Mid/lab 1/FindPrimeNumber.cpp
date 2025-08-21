@@ -1,3 +1,10 @@
+/*
+Exercise 6:
+Write a function bool isPrime(int n) that checks if a number is prime. Use it in a
+program to print all prime numbers between 1 and 50.
+*/
+
+
 #include <iostream>
 using namespace std;
 
